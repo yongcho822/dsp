@@ -31,7 +31,7 @@ Both Emacs and vim have built-in interactive tutorials that you can try.
 
 What terminal editor will you use? How did you make your decision?
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+In the earlier version of the pre-work, it rec'd that we learn Emacs and there was a tutorial for it, so Emacs is my terminal editor choice.
 
 ---
 
@@ -61,6 +61,6 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+I've used PyCharm before doing most of my work in iPython Notebook (jupyter) so that is what I'm familiar with. You can integrate github nicely within PyCharm but importantly, I am familiar with working in it. Another nice feature is to have multiple projects open in side-by-side tabs for easy navigation. A basic keyboard shortcut is to run code with ^ R but you can also configure your own keymaps. 
 
 ---
