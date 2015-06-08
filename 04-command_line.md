@@ -34,6 +34,7 @@ Flag combinations can all be useful in their unique ways. For instance, ls -al w
 
 What does `xargs` do? Give an example of how to use it.
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+`xargs` unpacks arguments to feed into commands one by one. 
+An example would be `prog | xargs utility` - xargs splits the resulting list of `prog` into individual lists and applies the `utility` command to each list one by one. 
 
 ---
