@@ -37,7 +37,9 @@ import sklearn
 
 Did you install Python 2 or 3? Why? How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+I have Py2 installed as that was the recommended default in the earlier version of the prework and what I've been working with since and have become used to. I am aware of the small differences now so can easily code in Py3 too if need be. 
+
+To check which version of Python you have installed, type `python --version` in the command line. Mine returns 2.7.6.
 
 ---
 
