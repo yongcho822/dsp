@@ -12,7 +12,7 @@ these in a couple of hours.
 
 Make a cheat sheet for yourself: a list of commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+I made a written cheatsheet on a notepad.
 
 ---
 
@@ -21,7 +21,11 @@ REPLACE THIS TEXT WITH YOUR RESPONSE
 
 What does `ls` do? What do `ls -a`, `ls -l`, and `ls -lh` do? What combinations of those flags are meaningful?
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+`ls` lists out the contents of the folder/directory you're currently in. 
+`ls -a` lists all the files that start with '.', including the hidden ones.
+`ls -l` lists all the files in a long listing format.
+`ls -lh` is the same as `ls -l` but lists the filesize in a human readable format. (h stands for human readable).
+Flag combinations can all be useful in their unique ways. For instance, ls -al would list EVERYTHING if you wanted to just see all the information of all the files in your folder.
 
 ---
 
