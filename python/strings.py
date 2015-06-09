@@ -165,4 +165,4 @@ def front_back(a, b):
     a1, a2 = divideString(a)
     b1, b2 = divideString(b)
     print a1 + b1 + a2 + b2
-    return a1 + b1 + a2 + b2
+    return a1 + b1 + a2 + b2"""
