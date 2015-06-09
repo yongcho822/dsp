@@ -158,3 +158,11 @@ def front_back(a, b):
     'KitDontenut'
     """
     raise NotImplementedError
+    
+"""another possible answer is:
+def front_back(a, b):
+    divideString = lambda s: (s[:((1+len(s))//2)], s[((1+len(s))//2):])
+    a1, a2 = divideString(a)
+    b1, b2 = divideString(b)
+    print a1 + b1 + a2 + b2
+    return a1 + b1 + a2 + b2
