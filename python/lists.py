@@ -1,8 +1,13 @@
 # Based on materials copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
 
-
 def match_ends(words):
+    count = 0
+    for i in words:
+        if len(i) >= 2 and i[0] == i[-1]:
+            count += 1
+    print count
+    
     """
     Given a list of strings, return the count of the number of strings
     where the string length is 2 or more and the first and last chars
@@ -19,6 +24,17 @@ def match_ends(words):
 
 
 def front_x(words):
+    xlist = []
+    otherlist = []
+    for i in words:
+        if i[0] == "x":
+            xlist.append(i)
+            xlist.sort()
+        else:
+            otherlist.append(i)
+            otherlist.sort()
+    print xlist + otherlist
+
     """
     Given a list of strings, return a list with the strings in sorted
     order, except group all the strings that begin with 'x' first.
@@ -31,11 +47,14 @@ def front_x(words):
     ['xaa', 'xcc', 'aaa', 'bbb', 'ccc']
     >>> front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
     ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
-    """
+    """ 
     raise NotImplementedError
 
 
 def sort_last(tuples):
+    print sorted(tuples, key = lambda x: x[-1])
+
+
     """
     Given a list of non-empty tuples, return a list sorted in
     increasing order by the last element in each tuple.
@@ -53,6 +72,15 @@ def sort_last(tuples):
 
 
 def remove_adjacent(nums):
+    emptylist = [nums[0]]
+    for i in nums:
+        if i == emptylist[-1]:
+            pass
+        else:
+            emptylist.append(i)
+    print emptylist
+
+    
     """
     Given a list of numbers, return a list where all adjacent equal
     elements have been reduced to a single element, so [1, 2, 2, 3]
@@ -72,6 +100,9 @@ def remove_adjacent(nums):
 
 
 def linear_merge(list1, list2):
+    print [sorted(list1+list2)]
+
+
     """
     Given two lists sorted in increasing order, create and return a
     merged list of all the elements in sorted order. You may modify
