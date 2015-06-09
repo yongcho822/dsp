@@ -3,6 +3,10 @@
 
 
 def donuts(count):
+    if count >= 10:
+        print "'Number of donuts:", "many'"
+    else:
+        print "'Number of donuts:", str(count)+"'"
     """
     Given an int count of a number of donuts, return a string of the
     form 'Number of donuts: <count>', where <count> is the number
@@ -20,8 +24,11 @@ def donuts(count):
     """
     raise NotImplementedError
 
-
 def both_ends(s):
+    if len(s) < 2:
+        print "''"
+    else:
+        print s[:2]+s[-2:]
     """
     Given a string s, return a string made of the first 2 and the last
     2 chars of the original string, so 'spring' yields 'spng'.
@@ -41,6 +48,9 @@ def both_ends(s):
 
 
 def fix_start(s):
+    firstchar = s[0]
+    modifiedstr = s[1:].replace(firstchar, "*")
+    print firstchar + modifiedstr
     """
     Given a string s, return a string where all occurences of its
     first char have been changed to '*', except do not change the
@@ -60,6 +70,11 @@ def fix_start(s):
 
 
 def mix_up(a, b):
+    firstduo = a[:2]
+    secondduo = b[:2]
+    firstfixed = a.replace(firstduo, secondduo)
+    secondfixed = b.replace(secondduo, firstduo)
+    print firstfixed, secondfixed
     """
     Given strings a and b, return a single string with a and b
     separated by a space '<a> <b>', except swap the first 2 chars of
@@ -78,6 +93,12 @@ def mix_up(a, b):
 
 
 def verbing(s):
+    if len(s) >= 3 and not s.endswith("ing"):
+        print s + "ing"
+    if len(s) >= 3 and s.endswith("ing"):
+        print s + "ly"
+    if len(s) < 3:
+        print s
     """
     Given a string, if its length is at least 3, add 'ing' to its end.
     Unless it already ends in 'ing', in which case add 'ly' instead.
@@ -95,6 +116,10 @@ def verbing(s):
 
 
 def not_bad(s):
+    if "not" in s and "bad" in s and s.index("not") < s.index("bad"):
+        print s.replace(s[s.index("not"):(s.index("bad")+3)], "good")
+    else:
+        print s
     """
     Given a string, find the first appearance of the substring 'not'
     and 'bad'. If the 'bad' follows the 'not', replace the whole
@@ -115,6 +140,8 @@ def not_bad(s):
 
 
 def front_back(a, b):
+    mid_a, mid_b = (len(a) + 1) // 2, (len(b) + 1) // 2
+    print a[:mid_a] + b[:mid_b] + a[mid_a:] + b[mid_b:]
     """
     Consider dividing a string into two halves. If the length is even,
     the front and back halves are the same length. If the length is
