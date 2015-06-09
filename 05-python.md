@@ -18,7 +18,7 @@ These exercises are implemented with doctests, which are runnable tests inside d
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+Python lists and tuples are both methods to store (usually multiple) values, which can both be accessed via index. Tuples are characterized by `( )` and lists are characterized by `[ ]`. The key difference is that a tuple, once created, is immutable. The order and values are set, and cannot be changed. Because of this characteristic, only tuples can be used as dictionary keys - only immutable elements can be used as dictionary keys.
 
 ---
 
@@ -27,7 +27,8 @@ REPLACE THIS TEXT WITH YOUR RESPONSE
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+Unlike tuples, both sets and lists are mutable objects. But sets are unordered and have unique/non-duplicate values. A list could be something like `items = ["arrow", "spear", "arrow", "arrow", "rock"]`. but a set would be `things = {"arrow", "spear", "arrow", "arrow", "rock"}` or you could do `set(items)` to convert the list into a set, which rids of duplicate items.
+In terms of performance for finding an element and checking for its existence, sets are faster than lists - that's because sets are implemented using hash tables, so that when searching for existence, python knows the exact position to check for the value. For lists, python will look at every value in the list to check if it is that value - so performance gets even worse for longer lists.
 
 ---
 
@@ -36,7 +37,17 @@ REPLACE THIS TEXT WITH YOUR RESPONSE
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+Python's `lambda` is a way to succinctly define a 'one-time use' function (acts as a 'throw-away' fuction). It also allows you to easily pass functions as a parameter.
+Here's an example of a basic lambda function: 
+`squared = lambda x: x**2`
+This is a more succinct line than:
+`def squared(x):`
+   `return x**2`
+Another example:
+`def sort_last(tuples):`
+    `print sorted(tuples, key = lambda x: x[-1])`
+What the lambda function does here is, when iterating over items in `tuples`, it takes the item, and then returns the last indexed value within that item. That is then assigned to the `key` parameter, which is the parameter of the `sorted()` function that tells you what item to sort the object by.
+
 
 ---
 
