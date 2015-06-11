@@ -57,25 +57,39 @@ What the lambda function does here is, when iterating over items in `tuples`, it
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
 List comprehensions work by generating and populating a list in 'one-line' code. The format is something like this:
+
 "[`operation to be done` for `whatever you'd like to run the operation on` in `where the 'whatever' is from` if `if clause`]"
 
 A more concrete example would be (generating a max length 5 list of multiples of two that are not divisible by 6) :
+
     example_list = [x*2 for x in range(5) if x*2/6. != 1]
     
 An equivalent using the `filter()` function would be:
+
     example_filter = filter(lambda x:x/6. != 1, [x*2 for x in range(5)])
+    
 The `filter()` function is interesting in that it needs a function passed in that returns a boolean value and then picks from a greater list only the values that return the value of True (or 1). The restricting part, compared to list comps, is that the full list has to be passed in to the filter function first. It's use is more restricted in being able to just select values from a list, rather than making a list out of nowhere, like list comps. 
 
 An equivalent using the `map()` function would be:
+
     example_map = map(lambda x: x*2, filter(lambda x: x*2/6. != 1, range(5)))
-You'll notice that the `filter()` function had to be used in conjunction. That's because lambdas cannot clealy handle conditionals like ifs on their owns, making this unusable: `example_map = map(lambda x:x*2 if x*2/6. != 1 else None, range(5))` - you'd get [0, 2, 4, None, 8], which isn't what we want. Maps apply a function to every element of the sequence, no exceptions. Because of this, `map()` sometimes requires extra help, like `filter()`, which takes away from its readability.
+    
+You'll notice that the `filter()` function had to be used in conjunction. That's because lambdas cannot clealy handle conditionals like ifs on their owns, making this unusable: 
+
+`example_map = map(lambda x:x*2 if x*2/6. != 1 else None, range(5))` - you'd get [0, 2, 4, None, 8], which isn't what we want.
+
+Maps apply a function to every element of the sequence, no exceptions. Because of this, `map()` sometimes requires extra help, like `filter()`, which takes away from its readability.
 
 List comp is more-readable, comprehensive, and preferred to both functions unless there's a specific need for either. The `filter()` function is just different than the `map()` function if you want to narrow down and list and use booleans in doing so. `map()` just applies the function to the whole sequence.
 
 Set comp example - the snytax/form is the same as list comp:
+
     exampleset = {x for x in range(2, 5)} -- this returns `set([2, 3, 4])`
+    
 Dict comp example:
+
     exampledict = {n: n**2 for n in range(5)}
+    
     #the difference is the colon, which identifies it as directionary keys and values we're adding within the curly brackets. 
 
 
