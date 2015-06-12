@@ -48,6 +48,7 @@ We want to find p(1|m).
 Using Baye's Theorem, p(1|m) = (p(1)*p(m|1))/p(m) = (0.33)*(1)/0.5 = 0.66.
 
 If identical twins are a third of all twins, there's a 2/3 chance that Elvis was an identical twin.
+
 ---
 
 
@@ -55,6 +56,10 @@ If identical twins are a third of all twins, there's a 2/3 chance that Elvis was
 
 How do frequentist and Bayesian statistics compare?
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+I'm not completely sure I've fully gasped an understanding of it, but this is what I know thus far:
+
+In Bayesian stats, everything is assigned probabilities, and things are computed mathematically/logically that way. Unknown quantities are treated probabilistically, prior information is factored in, and the state of the world can be constantly updated.
+
+In Frequentist stats, things are more set in stone and probabilitiy is more-so looked at as long-term 'frequency'. Probability statements can ony made about samples.
 
 ---
