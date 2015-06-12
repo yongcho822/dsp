@@ -4,6 +4,6 @@ Problem: [Think Stats Chapter 8 Exercise 3](http://greenteapress.com/thinkstats2
 
 ---
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+My solution and code are in this link: https://github.com/yongcho822/ThinkStats2/blob/master/code/exercises/hwproj6.py
 
 ---
