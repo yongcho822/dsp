@@ -27,14 +27,20 @@ Communicate the problem, how you solved it, and the solution, within each of the
 
 Elvis Presley had a twin brother who died at birth.  What is the probability that Elvis was an identical twin?
 
-Alright, if we know that Elvis had a twin brother, our two possibilities/hypotheses are 
+Alright, if we know that Elvis had a twin brother, our two possibilities/hypotheses are:
+
 1. Elvis was an identical twin
+
 2. Elvis was a fraternal twin 
+
 According to http://www.babycentre.co.uk/a539828/how-common-are-twins', identical twins constitute about 1/3rd of twins. 
+
 So p(1) = 0.33, p(2) = 0.66
 
 We know that this twin was a male and identical twins are the same gender.
+
 p(m|1) = 1
+
 p(m|2) = 0.5
 
 We want to find p(1|m).
