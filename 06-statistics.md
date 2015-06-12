@@ -60,6 +60,6 @@ I'm not completely sure I've fully gasped an understanding of it, but this is wh
 
 In Bayesian stats, everything is assigned probabilities, and things are computed mathematically/logically that way. Unknown quantities are treated probabilistically, prior information is factored in, and the state of the world can be constantly updated.
 
-In Frequentist stats, things are more set in stone and probabilitiy is more-so looked at as long-term 'frequency'. Probability statements can ony made about samples.
+In Frequentist stats, things are more set in stone and probabilitiy is more-so looked at as long-term 'frequency'. Probability statements can only be made about samples.
 
 ---
